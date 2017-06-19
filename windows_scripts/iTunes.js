@@ -98,8 +98,13 @@ var commands = {
         }
         return JSON.stringify({ok: true});
     },
+    
     setvolume: function(volume) {
         iTunes.SoundVolume = volume;
+    },
+    
+    getvolume: function() {
+        return iTunes.SoundVolume;
     }
 };
 
