@@ -116,4 +116,8 @@ Playback.prototype.setVolume = function(volume, callback) {
     this.runTransportScript('setvolume ' + volume, callback);
 };
 
+Playback.prototype.getVolume = function(callback) {
+    this.runTransportScript('getvolume', callback);
+};
+
 module.exports = new Playback();
